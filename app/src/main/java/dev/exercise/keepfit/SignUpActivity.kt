@@ -53,7 +53,7 @@ class SignUpActivity : AppCompatActivity() {
 
     }
 
-    fun validateFields() {
+    open fun validateFields() {
         var Fname = etFirstName.text.toString()
         var Lname = etLastname.text.toString()
         var em = etEmail.text.toString()
@@ -80,5 +80,12 @@ class SignUpActivity : AppCompatActivity() {
         if (cpswd.isBlank()) {
             etConfirmpassword.error = "input required"
         }
+
+        if (psw != cpswd) {
+            etPassword.error = " check password"
+        }
+
+
     }
+
 }

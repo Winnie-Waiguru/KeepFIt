@@ -3,10 +3,12 @@ package dev.exercise.keepfit
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputLayout
+import java.util.regex.Pattern
 
 class LogInActivity : AppCompatActivity() {
     lateinit var btnLogin:Button
@@ -43,12 +45,16 @@ class LogInActivity : AppCompatActivity() {
         val pswd= etPassword.text.toString()
 
         if (email.isBlank()){
-            etEmail2.error="Input required"
+            etEmail2.error="check password"
+
+        }
+        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            etEmail2.error="Wmail is required"
 
         }
 
         if (pswd.isBlank()){
-            etPassword.error="Input required"
+            etPassword.error="confirmed"
         }
 
 
