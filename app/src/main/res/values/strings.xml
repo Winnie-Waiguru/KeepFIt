@@ -9,4 +9,7 @@
     <string name="confirm_password">Confirm password</string>
     <string name="signup">SignUp</string>
     <string name="log_in">Log in</string>
+    <string name="plan">Plan</string>
+    <string name="track">Track</string>
+    <string name="proile">Proile</string>
 </resources>

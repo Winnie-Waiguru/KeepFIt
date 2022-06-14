@@ -28,7 +28,7 @@ class LogInActivity : AppCompatActivity() {
      tilPassword=findViewById(R.id.tilPassword)
      tvSignup=findViewById(R.id.tvSignup)
         btnLogin.setOnClickListener {
-            val intent = Intent(this, LogInActivity::class.java)
+            val intent = Intent(this, HomePageActivity::class.java)
             startActivity(intent)
             validateLogin()
 
@@ -49,7 +49,7 @@ class LogInActivity : AppCompatActivity() {
 
         }
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            etEmail2.error="Wmail is required"
+            etEmail2.error="Email is required"
 
         }
 
