@@ -11,5 +11,11 @@
     <string name="log_in">Log in</string>
     <string name="plan">Plan</string>
     <string name="track">Track</string>
-    <string name="proile">Proile</string>
+    <string name="profile">Proile</string>
+    <string name="already_have_an_account_log_in">Already have an account? <u>Log In</u></string>
+    <string name="planfragment">PlanFragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="track_fragment">track_fragment</string>
+    <string name="profile_fragment">profile_fragment</string>
 </resources>

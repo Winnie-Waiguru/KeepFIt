@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/custom_background"
+    android:background="@color/custom_background2"
     tools:context=".SignUpActivity">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -139,8 +139,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:text="@string/already_have_an_account_log_in"
         android:textSize="20sp"
-        android:text="@string/log_in"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
